@@ -9,13 +9,17 @@ public:
 		return y;
 	}
 	point() {
-		x = (new Date()).getTime() % 800;
-		y = (new Date()).getTime() % 600;
+		long now = (new Date()).getTime();
+		x = now % 800;
+		now = (new Date()).getTime();
+		y = now % 600;
 	}
 	void try_pick_up(int x, int y) {
 		if (this->x == x && this->y == y) {
-			x = (new Date()).getTime() % 800;
-			y = (new Date()).getTime() % 600;
+			long now = (new Date()).getTime();
+			x = now % 800;
+			now = (new Date()).getTime();
+			y = now % 600;
 		}
 	}
 };
