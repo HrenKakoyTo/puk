@@ -1,3 +1,5 @@
+#include <time.h>
+
 class point {
 private:
 	int x, y;
@@ -9,23 +11,19 @@ public:
 		return y;
 	}
 	point() {
-		long now = (new Date()).getTime();
-		x = now % 800;
-		now = (new Date()).getTime();
-		y = now % 600;
+		x = clock() % 800;
+		y = clock() % 600;
 	}
 	void try_pick_up(int x, int y) {
 		if (this->x == x && this->y == y) {
-			long now = (new Date()).getTime();
-			x = now % 800;
-			now = (new Date()).getTime();
-			y = now % 600;
+			x = clock() % 800;
+			y = clock() % 600;
 		}
 	}
 };
 
 
-class plaer {
+class player {
 private:
 	int x, y;
 public:
