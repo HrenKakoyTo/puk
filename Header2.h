@@ -37,15 +37,15 @@ public:
 		return y;
 	}
 	void move_left() {
-		if (x>0) x -= 1;
+		if (x>0) x -= 2;
 	}
 	void move_right() {
-		if (x<800)x += 1;
+		if (x<800)x += 2;
 	}
 	void move_down() {
-		if (y>0)y -= 1;
+		if (y>0)y -= 2;
 	}
 	void move_up() {
-		if (y<600)y += 1;
+		if (y<600)y += 2;
 	}
 };
