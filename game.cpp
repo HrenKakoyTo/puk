@@ -16,7 +16,7 @@ int main()
     sf::Texture hero;
     if (!hero.loadFromFile("texture.png"))
         return -1;
-
+    
     sf::Sprite s_hero;
     s_hero.setTexture(hero);
     s_hero.setPosition(400, 300);
@@ -35,6 +35,6 @@ int main()
         window.draw(s_hero);
         window.display();
     }
-
+    sdfsdf
     return 0;
 }
