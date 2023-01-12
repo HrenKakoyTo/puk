@@ -5,7 +5,7 @@
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(800, 600), "PUK");
-
+    window.setFramerateLimit(60);
     sf::Texture bg;
     if (!bg.loadFromFile("bg.png"))
         return -1;
@@ -16,7 +16,7 @@ int main()
     sf::Texture hero;
     if (!hero.loadFromFile("texture.png"))
         return -1;
-    
+
     sf::Sprite s_hero;
     s_hero.setTexture(hero);
     s_hero.setPosition(400, 300);
