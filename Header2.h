@@ -27,7 +27,7 @@ class player {
 private:
 	int x, y;
 public:
-	plaer():x(400),y(300){}
+	player():x(400),y(300){}
 	int getX() {
 		return x;
 	}
