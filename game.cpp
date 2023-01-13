@@ -69,6 +69,7 @@ int main()
         window.clear();
         window.draw(s_bg);
         window.draw(s_hero);
+        window.draw(s_thing);
         window.display();
     }
     
