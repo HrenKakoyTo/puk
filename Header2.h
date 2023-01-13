@@ -15,8 +15,9 @@ public:
 		y = clock() % 600;
 	}
 	void try_pick_up(int x, int y) {
-		if (this->x == x && this->y == y) {
-			x = clock() % 800;
+        if (this->x >= x - 40 && this->x <= x + 40 && this->y >= y - 40 && this->y <= y + 40)
+        {
+            x = clock() % 800;
 			y = clock() % 600;
 		}
 	}
@@ -41,9 +42,9 @@ public:
 		if (x<800)x += 2;
 	}
 	void move_down() {
-		if (y>0)y -= 2;
+		if (y>0)y += 2;
 	}
 	void move_up() {
-		if (y<600)y += 2;
+		if (y<600)y -= 2;
 	}
 };

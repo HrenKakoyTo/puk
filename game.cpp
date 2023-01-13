@@ -2,25 +2,39 @@
 #include<SFML/Window.hpp>
 #include<SFML/System.hpp>
 #include "Header2.h"
+#include "iostream"
 
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(800, 600), "PUK");
     window.setFramerateLimit(60);
     sf::Texture bg;
-    if (!bg.loadFromFile("texture/bg.png"))
+    if (!bg.loadFromFile("/home/jus/puk/texture/bg.png"))
         return -1;
 
     sf::Sprite s_bg;
     s_bg.setTexture(bg);
 
     sf::Texture hero;
-    if (!hero.loadFromFile("texture/hero.png"))
+    if (!hero.loadFromFile("/home/jus/puk/texture/hero.png"))
         return -1;
-    
+
+    sf::Texture thing;
+    if (!thing.loadFromFile("/home/jus/puk/texture/t_A.png"))
+        return -1;
+
+    sf::Sprite s_thing;
+    s_thing.setTexture(thing);
+    s_thing.setPosition(400, 300);
+
+
     sf::Sprite s_hero;
     s_hero.setTexture(hero);
-    s_hero.setPosition(400, 300);
+    s_hero.setPosition(410, 300);
+
+    player Player;
+    point Point;
+
 
     while (window.isOpen())
     {
@@ -31,10 +45,6 @@ int main()
                 window.close();
         }
 
-
-	player Player;
-        point Point;
-        
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
         {
             Player.move_left();
@@ -51,6 +61,10 @@ int main()
         {
             Player.move_down();
         }
+        Point.try_pick_up(Player.getX(),Player.getY());
+        s_hero.setPosition(Player.getX(),Player.getY());
+        s_thing.setPosition(Point.getX(),Point.getY());
+
 
         window.clear();
         window.draw(s_bg);
