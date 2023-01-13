@@ -15,7 +15,7 @@ public:
 		y = clock() % 600;
 	}
 	void try_pick_up(int x, int y) {
-        if (this->x <= x - 40 && this->x >= x + 40 && this->y <= y - 40 && this->y >= y + 40)
+        if (this->x <= x + 60 && this->x + 100 >= x && this->y <= y + 40 && this->y + 80 >= y)
         {
             x = clock() % 800;
 			y = clock() % 600;
