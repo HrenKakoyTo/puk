@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "A:/Clion progects/puk/game.cpp" "CMakeFiles/puk.dir/game.cpp.obj" "gcc" "CMakeFiles/puk.dir/game.cpp.obj.d"
+  "C:/puk/game.cpp" "CMakeFiles/puk.dir/game.cpp.obj" "gcc" "CMakeFiles/puk.dir/game.cpp.obj.d"
   )
 
 # Targets to which this target links.
