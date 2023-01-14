@@ -2,7 +2,6 @@
 #include<SFML/Window.hpp>
 #include<SFML/System.hpp>
 #include "Header2.h"
-#include "iostream"
 
 int main()
 {
@@ -72,6 +71,6 @@ int main()
         window.draw(s_thing);
         window.display();
     }
-    
+
     return 0;
 }

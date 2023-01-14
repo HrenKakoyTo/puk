@@ -1,5 +1,5 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/opt/clion/bin/ninja/linux/ninja -G Ninja -S /home/jus/puk -B /home/jus/puk/cmake-build-debug
--- Found SFML 2.5.1 in /usr/lib/cmake/SFML
+"A:\CLion 2022.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S "A:\Clion progects\puk" -B "A:\Clion progects\puk\cmake-build-debug"
+-- Found SFML 2.5.1 in A:/Clion progects/puk/SFML-2.5.1/lib/cmake/SFML
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/jus/puk/cmake-build-debug
+-- Build files have been written to: A:/Clion progects/puk/cmake-build-debug
