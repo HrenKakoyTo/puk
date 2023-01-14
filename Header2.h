@@ -1,4 +1,5 @@
 #include <time.h>
+#include <random>
 
 class point {
 private:
@@ -11,14 +12,14 @@ public:
 		return y;
 	}
 	point() {
-		x = clock() % 800;
-		y = clock() % 600;
+		x = rand() % 800;
+		y = rand() % 600;
 	}
 	void try_pick_up(int x, int y) {
         if (this->x <= x + 60 && this->x + 100 >= x && this->y <= y + 40 && this->y + 80 >= y)
         {
-            x = clock() % 800;
-			y = clock() % 600;
+            this->x = rand() % 800;
+			this->y = rand() % 600;
 		}
 	}
 };

@@ -5,21 +5,23 @@
 
 int main()
 {
+    srand(clock());
+
     sf::RenderWindow window(sf::VideoMode(800, 600), "PUK");
     window.setFramerateLimit(60);
     sf::Texture bg;
-    if (!bg.loadFromFile("/home/jus/puk/texture/bg.png"))
+    if (!bg.loadFromFile("./texture/bg.png")) // ДЕЛАЙТЕ ПУТИ ОТНОСИТЕЛНЫМИ!!!!!
         return -1;
 
     sf::Sprite s_bg;
     s_bg.setTexture(bg);
 
     sf::Texture hero;
-    if (!hero.loadFromFile("/home/jus/puk/texture/hero.png"))
+    if (!hero.loadFromFile("./texture/hero.png")) // ДЕЛАЙТЕ ПУТИ ОТНОСИТЕЛНЫМИ!!!!!
         return -1;
 
     sf::Texture thing;
-    if (!thing.loadFromFile("/home/jus/puk/texture/t_A.png"))
+    if (!thing.loadFromFile("./texture/t_A.png")) // ДЕЛАЙТЕ ПУТИ ОТНОСИТЕЛНЫМИ!!!!!
         return -1;
 
     sf::Sprite s_thing;
