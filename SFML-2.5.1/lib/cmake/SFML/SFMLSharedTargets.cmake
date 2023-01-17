@@ -84,7 +84,7 @@ set_target_properties(sfml-network PROPERTIES
 )
 
 # Create imported target sfml-graphics
-add_library(sfml-graphics SHARED IMPORTED)
+add_library(sfml-graphics SHARED IMPORTED ../../../../Visual/v_main_menu.cpp)
 
 set_target_properties(sfml-graphics PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"

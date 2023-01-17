@@ -1,3 +1,3 @@
-C:/puk/cmake-build-debug/CMakeFiles/puk.dir
-C:/puk/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/puk/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/spacename/Desktop/kursach/puk/cmake-build-debug/CMakeFiles/puk.dir
+C:/Users/spacename/Desktop/kursach/puk/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/spacename/Desktop/kursach/puk/cmake-build-debug/CMakeFiles/rebuild_cache.dir
